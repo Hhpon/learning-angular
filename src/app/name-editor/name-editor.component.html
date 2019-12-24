@@ -1,0 +1,11 @@
+<label>
+  Name:
+  <input type="text" [formControl]="name" />
+</label>
+<label>
+  age:
+  <input type="text" [formControl]="age" />
+</label>
+<p>name: {{ name.value }}</p>
+<p>age: {{ age.value }}</p>
+<button (click)="updateName()">修改名字</button>
